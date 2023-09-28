@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Capstone project</title>
+ <style>
+
+  
+  body {
+    /*background-color: aqua;*/
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.div_top {
+    
+    width: 100vw;
+    background-color: #FFF6FF;
+
+}
+
+
+.top_div {
+    height: 10vh;
+    width: 100vw;
+
+}
+
+.top_logo {
+    width:8vw;
+    height: 10vh;
+    padding-left: 10px;
+}
+
+.logo_img {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/vishnu_logo-removeb-pngd.png?v=1683610386972");
+    background-size: cover;
+    height:15vh;
+    width:10vw;
+}
+
+
+.top_heading {
+    width: 80vw;
+    height: 10vh;
+    
+}
+
+.heading {
+    font-size: 30px;
+    font-family: serif;
+    text-align: center;
+   
+    
+    
+}
+
+.top_navbar {
+    width: 10vw;
+    height: 10vh;
+  padding-left:5px;
+}
+
+.logo_mech {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/IMG-20230508-WA0002-removebg-preview.png?v=1683571352768");
+    background-size: cover;
+}
+
+.carousel {
+    height: 40vh;
+    width: 100vw;
+}
+
+
+.box_container {
+    height: 50vh;
+    width: 100vw;
+
+}
+
+.box_item {
+    height: 150px;
+    width: 150px;
+    margin: 3vh;
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+.height {
+    height: 45vh;
+}
+
+.width {
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+.box_item_img_1 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__7_-removebg-preview.png?v=1683575292254");
+    background-size: cover;
+
+}
+
+.box_item_img_2 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__6_-removebg-preview.png?v=1683575280434");
+    background-size: cover;
+
+}
+
+.box_item_img_3 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/attendence-removebg-preview%20(1).png?v=1683575249011");
+    background-size: cover;
+
+}
+
+.box_item_img_4 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__4_-removebg-preview.png?v=1683575256772");
+    background-size: cover;
+}
+
+.box_item_img_5 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__5_-removebg-preview.png?v=1683575267183");
+    background-size: cover;
+}
+
+.box_item_img_6 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/images__5_-removebg-preview.png?v=1683575215177");
+    background-size: cover;
+}
+
+.text_heading {
+    font-family: Roboto;
+    margin-bottom: 5px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.carousel_box_shawod {
+    margin-top: 0px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 25px;
+    scroll-timeline: 0.3s;
+} 
+   .one {
+     font-size:40px;
+     color:purple;
+     
+   }
+   
+   .heading_shadow{
+     shadow: 10px 10px 5px black;
+     /**margin-bottom:10px;**/
+     
+   }
+</style> 
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">About</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Rest of your content -->
+    <div class="div_top heading_shadow">
+        <!-- ... (your existing content) ... -->
+    </div>
+    
+    <div class="div_top heading_shadow">
+        <div class="top_div d-flex">
+            <div class="top_logo logo_img "></div>
+            <div class="top_heading heading  "><span class="one">V</span>ISHNU <span class="one"> I</span>NSTITUTE OF <span class="one"> T</span>ECHNOLOGY <span class="one"> A</span>UTONOMOUS <span class="one"> M</span>ECHANICAL <span class="one">EN</span>GINEERING</div>
+            <div class="top_navbar logo_mech"></div>
+        </div>
+        <div class="carousel_box_shawod">
+            <div class="height ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/Screenshot%202023-05-09%20095646.png?v=1683606455719" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/WhatsApp%20Image%202023-05-09%20at%209.58.54%20AM.jpeg?v=1683606577868" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/WhatsApp%20Image%202023-05-09%20at%2010.06.43%20AM.jpeg?v=1683607055933" alt="fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/Screenshot%202023-05-09%20100037.png?v=1683606730262" alt="Third slide">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="box_container">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a href="https://www.vishnu.edu.in/placements.php">
+                            <div class=" box_item box_item_img_1 text-center">
+
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Placements</div>
+                            </btn>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/sub_and_vids.html">
+
+                            <div class="box_item box_item_img_2 text-center">
+
+                            </div>
+                            <btn class="">
+                                <div class="text_heading text-center">Lectures</div>
+                            </btn>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="https://vishnu.ac.in/Default.aspx?ReturnUrl=%2f">
+
+                            <div class="box_item text-center box_item_img_3">
+
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Attendence</div>
+                            </btn>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a href="https://vishnu.edu.in/results.php">
+                            <div class="box_item text-center box_item_img_4">
+
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Results</div>
+                            </btn>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/materials.html">
+                            <div class="box_item text-center box_item_img_5">
+
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Materials</div>
+                            </btn>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/faculty%26alumni.html">
+                            <div class="box_item text-center box_item_img_6">
+
+
+                            </div>
+
+
+                            <btn>
+                                <div class="text_heading text-center">Faculty & Alumni</div>
+                            </btn>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+</body>
+
+</html>
+
+
